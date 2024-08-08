@@ -207,11 +207,14 @@
   }
   .experience__title {
     margin: 22px 0 12px 0;
+    @media (max-width: 1024px) {
+      margin: 5px 0;
+    }
   }
   .experience__description {
     margin: 10px 0;
     @media (max-width: 1024px) {
-      font-size: 14px;
+      font-size: 12px;
     }
   }
   .experience__content {
@@ -268,6 +271,9 @@
       text-align: center;
       max-width: 800px;
       margin-top: 100px;
+      @media (max-width: 1024px) {
+        margin-top: 10px;
+      }
       .commercial__subtitle {
         background-color: rgba($color: #f4f4f4, $alpha: 0.9);
         max-width: 200px;
@@ -276,6 +282,9 @@
       }
       .commercial__title {
         margin: 22px 0 12px 0;
+        @media (max-width: 1024px) {
+          margin: 5px 0;
+        }
       }
       .commercial__description {
         color: #1c2752;
@@ -323,6 +332,10 @@
         .commercial__electrical--content {
           max-width: 624px;
           padding: 60px 60px 0 60px;
+          @media (max-width: 1024px) {
+            padding: 10px 10px 0 10px;
+            text-align: center;
+          }
           .commercial__electrical--subtitle {
             justify-content: center;
             max-width: 259px;
@@ -330,6 +343,9 @@
           }
           .commercial__electrical--title {
             margin: 22px 0 12px 0;
+            @media (max-width: 1024px) {
+              margin: 5px 0;
+            }
           }
           .commercial__electrical--description {
             max-width: 549px;
@@ -343,6 +359,7 @@
             cursor: pointer;
             @media (max-width: 1024px) {
               padding: 10px 23px;
+              margin: 5px 0;
             }
           }
         }
@@ -390,6 +407,9 @@
   .offers__description {
     text-align: center;
     margin: 12px 11px 40px 11px;
+    @media (max-width: 1024px) {
+      margin: 10px;
+    }
   }
   .offers__list {
     display: flex;
@@ -420,7 +440,7 @@
             font-size: 18px;
           }
         }
-        .offer__item--description {
+        .offers__item--description {
           max-width: 299px;
           font-size: 16px;
           line-height: 27px;
@@ -500,7 +520,7 @@
     .reasons__content {
       margin: 73px 70px;
       @media (max-width: 1024px) {
-        margin: 30px 10px;
+        margin: 20px 10px;
       }
       .reasons__subtitle {
         background-color: rgba($color: #f4f4f4, $alpha: 0.9);
@@ -671,6 +691,7 @@
         }
         .comments__question--subtitle {
           display: flex;
+          align-items: center;
           justify-content: center;
           max-width: 174px;
           background-color: rgba($color: #f4f4f4, $alpha: 0.9);
@@ -707,7 +728,7 @@
   }
   .comments__appointment {
     max-width: 564px;
-    margin-top: 35px;
+    width: 100%;
     @media (max-width: 1024px) {
       margin-top: 0;
     }
@@ -718,42 +739,40 @@
       background-color: rgba($color: #f4f4f4, $alpha: 0.9);
     }
     .comments__appointment--title {
+      max-width: 425px;
       margin: 22px 0 40px 0;
-      @media (max-width: 1024) {
+      @media (max-width: 1024px) {
         margin: 10px 0;
       }
     }
-    .comments__form {
-      display: flex;
-      flex-direction: column;
+    .comments__content {
+      max-width: 564px;
+      width: 100%;
       background-color: #f4f4f4;
-      gap: 25px;
-      margin: 50px 0;
-      padding: 55px 20px;
-      @media (max-width: 1024px) {
-        padding: 30px 10px;
-      }
-      .comments__input {
-        margin: 0px 20px;
-        padding: 20px 300px 20px 30px;
-        @media (max-width: 1024px) {
-          padding: 10px 150px 10px 15px;
+      .comments__form {
+        padding: 59px 40px;
+        .comments__group {
+          margin: 25px 0;
+          .comments__input {
+            padding: 20px;
+            width: 100%;
+            &::placeholder {
+              font-size: 17px;
+              color: #1c2752;
+            }
+          }
+          .input__description {
+            padding-bottom: 70px;
+          }
         }
-        @media (max-width: 420px) {
-          padding: 5px 50px 5px 8px;
+        .comments__form--button {
+          width: 100%;
+          background-color: #ffb342;
+          border: 2px solid #ffb342;
+          padding: 20px;
+          font-size: 18px;
+          cursor: pointer;
         }
-      }
-      .comments__form--button {
-        background-color: #ffb342;
-        border: 2px solid #ffb342;
-        padding: 20px;
-        margin: 0px 20px;
-        color: #1c2752;
-        font-weight: 700;
-        cursor: pointer;
-      }
-      .input__description {
-        padding: 19px 20px 109px;
       }
     }
   }
@@ -907,6 +926,9 @@
         padding: 20px 85px;
         color: #1c2752;
         cursor: pointer;
+        @media (max-width: 1024px) {
+          padding: 10px 40px;
+        }
       }
     }
     .plan__footer {
@@ -957,6 +979,9 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    @media (max-width: 1024px) {
+      gap: 0;
+    }
     .news__garden,
     .news__energy {
       max-width: 580px;
@@ -980,6 +1005,9 @@
         align-items: center;
         padding: 20px 40px;
         margin-top: -30px;
+        @media (max-width: 1024px) {
+          padding: 10px 20px;
+        }
       }
     }
     .news__content {
@@ -1087,6 +1115,7 @@
       justify-content: space-between;
       @media (max-width: 1024px) {
         align-items: center;
+        margin-bottom: 0;
       }
       .footer__logo {
         width: 100%;
@@ -1119,6 +1148,9 @@
       .footer__menu--social {
         max-width: 401px;
         margin-top: 80px;
+        @media (max-width: 1024px) {
+          margin-top: 20px;
+        }
         p {
           font-size: 18px;
           line-height: 27px;
@@ -1179,9 +1211,11 @@
 @media (max-width: 1024px) {
   .title {
     font-size: 30px;
+    line-height: 30px;
   }
   .description {
     font-size: 14px;
+    line-height: 20px;
   }
   .header__hours p {
     font-size: 14px;
@@ -1207,13 +1241,13 @@
     }
   }
   .service__container {
-    padding: 200px 30px;
+    padding: 100px 30px;
   }
   .experience__container {
     margin: 20px auto;
     flex-direction: column;
     align-items: center;
-
+    gap: 20px;
     .experience__list {
       flex-direction: column;
       align-items: center;
@@ -1236,7 +1270,6 @@
     display: none;
   }
   .reasons__container,
-  .comments__container,
   .plan__header,
   .plan__footer,
   .news__main,
@@ -1244,6 +1277,10 @@
   .footer__menu,
   .footer__menu--middle {
     flex-direction: column;
+  }
+  .comments__container {
+    flex-direction: column;
+    gap: 10px;
   }
   .news__card--item {
     font-size: 14px;
@@ -1263,6 +1300,9 @@
     nav {
       font-size: 25px;
     }
+  }
+  .comments__form {
+    padding: 30px 10px !important;
   }
 }
 

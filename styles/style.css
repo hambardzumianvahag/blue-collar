@@ -223,12 +223,17 @@
 .experience__container .experience__title {
   margin: 22px 0 12px 0;
 }
+@media (max-width: 1024px) {
+  .experience__container .experience__title {
+    margin: 5px 0;
+  }
+}
 .experience__container .experience__description {
   margin: 10px 0;
 }
 @media (max-width: 1024px) {
   .experience__container .experience__description {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 .experience__container .experience__content {
@@ -289,6 +294,11 @@
   max-width: 800px;
   margin-top: 100px;
 }
+@media (max-width: 1024px) {
+  .commercial__container .commercial__main .commercial__content {
+    margin-top: 10px;
+  }
+}
 .commercial__container .commercial__main .commercial__content .commercial__subtitle {
   background-color: rgba(244, 244, 244, 0.9);
   max-width: 200px;
@@ -297,6 +307,11 @@
 }
 .commercial__container .commercial__main .commercial__content .commercial__title {
   margin: 22px 0 12px 0;
+}
+@media (max-width: 1024px) {
+  .commercial__container .commercial__main .commercial__content .commercial__title {
+    margin: 5px 0;
+  }
 }
 .commercial__container .commercial__main .commercial__content .commercial__description {
   color: #1c2752;
@@ -352,6 +367,12 @@
   max-width: 624px;
   padding: 60px 60px 0 60px;
 }
+@media (max-width: 1024px) {
+  .commercial__container .commercial__main .commercial__electrical .commercial__electrical--main .commercial__electrical--content {
+    padding: 10px 10px 0 10px;
+    text-align: center;
+  }
+}
 .commercial__container .commercial__main .commercial__electrical .commercial__electrical--main .commercial__electrical--content .commercial__electrical--subtitle {
   justify-content: center;
   max-width: 259px;
@@ -359,6 +380,11 @@
 }
 .commercial__container .commercial__main .commercial__electrical .commercial__electrical--main .commercial__electrical--content .commercial__electrical--title {
   margin: 22px 0 12px 0;
+}
+@media (max-width: 1024px) {
+  .commercial__container .commercial__main .commercial__electrical .commercial__electrical--main .commercial__electrical--content .commercial__electrical--title {
+    margin: 5px 0;
+  }
 }
 .commercial__container .commercial__main .commercial__electrical .commercial__electrical--main .commercial__electrical--content .commercial__electrical--description {
   max-width: 549px;
@@ -374,6 +400,7 @@
 @media (max-width: 1024px) {
   .commercial__container .commercial__main .commercial__electrical .commercial__electrical--main .commercial__electrical--content .commercial__electrical--button button {
     padding: 10px 23px;
+    margin: 5px 0;
   }
 }
 .commercial__container .commercial__main .commercial__electrical .commercial__electrical--main .commercial__electrical--image {
@@ -420,6 +447,11 @@
   text-align: center;
   margin: 12px 11px 40px 11px;
 }
+@media (max-width: 1024px) {
+  .offers .offers__description {
+    margin: 10px;
+  }
+}
 .offers .offers__list {
   display: flex;
   flex-wrap: wrap;
@@ -456,7 +488,7 @@
     font-size: 18px;
   }
 }
-.offers .offers__list .offers__item .offers__item--content .offer__item--description {
+.offers .offers__list .offers__item .offers__item--content .offers__item--description {
   max-width: 299px;
   font-size: 16px;
   line-height: 27px;
@@ -464,7 +496,7 @@
   margin-bottom: 20px;
 }
 @media (max-width: 1024px) {
-  .offers .offers__list .offers__item .offers__item--content .offer__item--description {
+  .offers .offers__list .offers__item .offers__item--content .offers__item--description {
     font-size: 12px;
   }
 }
@@ -546,7 +578,7 @@
 }
 @media (max-width: 1024px) {
   .reasons__container .reasons__main .reasons__content {
-    margin: 30px 10px;
+    margin: 20px 10px;
   }
 }
 .reasons__container .reasons__main .reasons__content .reasons__subtitle {
@@ -731,6 +763,7 @@
 }
 .comments__container .comments__customer .comments__question .comments__question--content .comments__question--subtitle {
   display: flex;
+  align-items: center;
   justify-content: center;
   max-width: 174px;
   background-color: rgba(244, 244, 244, 0.9);
@@ -768,7 +801,7 @@
 }
 .comments__container .comments__appointment {
   max-width: 564px;
-  margin-top: 35px;
+  width: 100%;
 }
 @media (max-width: 1024px) {
   .comments__container .comments__appointment {
@@ -782,51 +815,47 @@
   background-color: rgba(244, 244, 244, 0.9);
 }
 .comments__container .comments__appointment .comments__appointment--title {
+  max-width: 425px;
   margin: 22px 0 40px 0;
 }
-@media (max-width: 1024) {
+@media (max-width: 1024px) {
   .comments__container .comments__appointment .comments__appointment--title {
     margin: 10px 0;
   }
 }
-.comments__container .comments__appointment .comments__form {
-  display: flex;
-  flex-direction: column;
+.comments__container .comments__appointment .comments__content {
+  max-width: 564px;
+  width: 100%;
   background-color: #f4f4f4;
-  gap: 25px;
-  margin: 50px 0;
-  padding: 55px 20px;
 }
-@media (max-width: 1024px) {
-  .comments__container .comments__appointment .comments__form {
-    padding: 30px 10px;
-  }
+.comments__container .comments__appointment .comments__content .comments__form {
+  padding: 59px 40px;
 }
-.comments__container .comments__appointment .comments__form .comments__input {
-  margin: 0px 20px;
-  padding: 20px 300px 20px 30px;
+.comments__container .comments__appointment .comments__content .comments__form .comments__group {
+  margin: 25px 0;
 }
-@media (max-width: 1024px) {
-  .comments__container .comments__appointment .comments__form .comments__input {
-    padding: 10px 150px 10px 15px;
-  }
+.comments__container .comments__appointment .comments__content .comments__form .comments__group .comments__input {
+  padding: 20px;
+  width: 100%;
 }
-@media (max-width: 420px) {
-  .comments__container .comments__appointment .comments__form .comments__input {
-    padding: 5px 50px 5px 8px;
-  }
+.comments__container .comments__appointment .comments__content .comments__form .comments__group .comments__input::-moz-placeholder {
+  font-size: 17px;
+  color: #1c2752;
 }
-.comments__container .comments__appointment .comments__form .comments__form--button {
+.comments__container .comments__appointment .comments__content .comments__form .comments__group .comments__input::placeholder {
+  font-size: 17px;
+  color: #1c2752;
+}
+.comments__container .comments__appointment .comments__content .comments__form .comments__group .input__description {
+  padding-bottom: 70px;
+}
+.comments__container .comments__appointment .comments__content .comments__form .comments__form--button {
+  width: 100%;
   background-color: #ffb342;
   border: 2px solid #ffb342;
   padding: 20px;
-  margin: 0px 20px;
-  color: #1c2752;
-  font-weight: 700;
+  font-size: 18px;
   cursor: pointer;
-}
-.comments__container .comments__appointment .comments__form .input__description {
-  padding: 19px 20px 109px;
 }
 
 .clients__container {
@@ -991,6 +1020,11 @@
   color: #1c2752;
   cursor: pointer;
 }
+@media (max-width: 1024px) {
+  .plan .plan__container .plan__button button {
+    padding: 10px 40px;
+  }
+}
 .plan .plan__container .plan__footer {
   display: flex;
   justify-content: space-between;
@@ -1041,6 +1075,11 @@
   align-items: center;
   gap: 20px;
 }
+@media (max-width: 1024px) {
+  .news__container .news__main {
+    gap: 0;
+  }
+}
 .news__container .news__main .news__garden,
 .news__container .news__main .news__energy {
   max-width: 580px;
@@ -1066,6 +1105,11 @@
   align-items: center;
   padding: 20px 40px;
   margin-top: -30px;
+}
+@media (max-width: 1024px) {
+  .news__container .news__main .news__card .news__card--item {
+    padding: 10px 20px;
+  }
 }
 .news__container .news__main .news__content {
   margin-top: 20px;
@@ -1188,6 +1232,7 @@
 @media (max-width: 1024px) {
   .footer .footer__container .footer__card {
     align-items: center;
+    margin-bottom: 0;
   }
 }
 .footer .footer__container .footer__card .footer__logo {
@@ -1222,6 +1267,11 @@
 .footer .footer__container .footer__menu .footer__menu--social {
   max-width: 401px;
   margin-top: 80px;
+}
+@media (max-width: 1024px) {
+  .footer .footer__container .footer__menu .footer__menu--social {
+    margin-top: 20px;
+  }
 }
 .footer .footer__container .footer__menu .footer__menu--social p {
   font-size: 18px;
@@ -1277,9 +1327,11 @@
 @media (max-width: 1024px) {
   .title {
     font-size: 30px;
+    line-height: 30px;
   }
   .description {
     font-size: 14px;
+    line-height: 20px;
   }
   .header__hours p {
     font-size: 14px;
@@ -1305,12 +1357,13 @@
     font-size: 10px;
   }
   .service__container {
-    padding: 200px 30px;
+    padding: 100px 30px;
   }
   .experience__container {
     margin: 20px auto;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
   .experience__container .experience__list {
     flex-direction: column;
@@ -1331,7 +1384,6 @@
     display: none;
   }
   .reasons__container,
-  .comments__container,
   .plan__header,
   .plan__footer,
   .news__main,
@@ -1339,6 +1391,10 @@
   .footer__menu,
   .footer__menu--middle {
     flex-direction: column;
+  }
+  .comments__container {
+    flex-direction: column;
+    gap: 10px;
   }
   .news__card--item {
     font-size: 14px;
@@ -1356,6 +1412,9 @@
   .footer__menu--middle nav,
   .footer__menu--utility nav {
     font-size: 25px;
+  }
+  .comments__form {
+    padding: 30px 10px !important;
   }
 }
 @media (max-width: 420px) {
